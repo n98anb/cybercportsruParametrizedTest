@@ -1,6 +1,8 @@
 package Enum;
 
-
+/*
+Енам, содержащий в себе ожидаемые заголовки
+ */
 public enum HeadersEnum {
     MATCHES("Матчи"),
     TOURNAMENTS("Турниры"),

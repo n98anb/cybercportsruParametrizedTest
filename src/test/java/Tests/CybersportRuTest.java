@@ -3,14 +3,10 @@ package Tests;
 import Pages.MainPage;
 import com.codeborne.selenide.Selenide;
 import org.junit.Assert;
-import org.junit.Before;
+
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+
 
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -20,9 +16,11 @@ public class CybersportRuTest {
     MainPage mainPage = new MainPage(URL);
     String wrongLogin = "bdfbdf";
     String wrongPassword = "bdfzbfg";
-    String login = "login";
-    String password = "password";
-
+    String login = "login"; //для прохождения теста введите правильный логин пользователя, зарегестрированного на сайте
+    String password = "password"; //для прохождения теста введите правильный пароль, соответствующий существующему логину
+/*
+Тест верификации
+ */
     @Test
     public void authorizationTestWithWrongPassword(){
         sleep(12000);
@@ -30,6 +28,10 @@ public class CybersportRuTest {
         sleep(2000);
         Assert.assertTrue(mainPage.checkWrongAuthorization());
     }
+
+    /*
+Тест авторизации
+ */
     @Test
     public void authorizationTestWithTruePassword(){
         sleep(12000);

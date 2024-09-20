@@ -11,7 +11,9 @@ import static Tests.CybersportRuTest.URL;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ParametrizedTestCyber extends BaseTest {
-
+    /*
+    Параметризированный тест, проверяющий реальные заголовки страниц с их ожиданиями
+     */
     @ParameterizedTest
     @EnumSource(HeadersEnum.class)
     public void enumTest(HeadersEnum type) {

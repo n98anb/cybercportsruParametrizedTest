@@ -52,7 +52,9 @@ public class MainPage {
         return false;
     }
 
-
+/*
+Метод, при обращении к которому выводятся заголовки таких блоков сайта как Матчи,Турниры,Команды, Блог
+ */
     public String getTitle(HeadersEnum header){
         return switch (header) {
             case MATCHES:
